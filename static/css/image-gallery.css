@@ -1,9 +1,14 @@
-.container {
+.container-img {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 1rem;
   }
 
+.container-img img {
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+}
 
   .responsive-image {
     max-width: 100%;

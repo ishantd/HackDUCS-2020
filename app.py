@@ -18,11 +18,13 @@ app.debug = True
 #     fileName = db.Column(db.String(300))
 #     data = db.Column(db.LargeBinary)
 
+
+
 def create_url(letters):
     for i in range(0, len(letters)):
         x = letters[i]
-        letters[i] = 'images/'+ letters[i] +'.jpg'
-        print(letters[i])
+        letters[i] =  'images/' + letters[i] +'.jpg'
+        # print(letters[i])
     return letters
 
 def split(word): 
@@ -42,7 +44,7 @@ def convertQuery():
     text_list = split(text)
     paths = create_url(text_list)
     # print(paths)
-    return render_template('txt2sign-success.html', paths)
+    return render_template('txt2sign-success.html', results=paths)
 
 @app.route('/')
 def index():
