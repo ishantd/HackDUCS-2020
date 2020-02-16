@@ -29,6 +29,12 @@ def ocr2sign():
 def txt2sign():
     return render_template('txt2sign.html')
 
+@app.route('/uploadQuery', methods=['POST'])
+def convertQuery():
+    text = request.form['inputQuery']
+    processed_text = text.upper()
+
+    return processed_text
 
 
 @app.route('/')
