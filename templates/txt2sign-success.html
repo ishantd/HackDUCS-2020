@@ -2,21 +2,25 @@
 
 {% block body %}
 
-<div class="container-img">
-  <div class="grid">
-    {% if results %}
-      {% for img_name in results %}
-      <div class="cell">
-        <!-- <h3>{{ img_name }}</h3> -->
-        <img src="static/{{ img_name }}" class="responsive-image" width="150px" height="150px"/>
-      </div>
-      {% endfor %}
-    {% else %}
-        No results :(
-    {% endif %}
-  </div>
-</div>
 
+
+
+    <div class="container">
+      <div class="row">
+    
+        
+        {% if results %}
+          {% for img_name in results %}
+          <div class="cell">
+            <!-- <h3>{{ img_name }}</h3> -->
+            <img src="static/{{ img_name }}" class="responsive-image" width="150px" height="150px"/>
+          </div>
+          {% endfor %}
+        {% else %}
+            No results :(
+        {% endif %}
+      </div>
+    </div>
 
 
 
