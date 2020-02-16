@@ -6,7 +6,7 @@ from flask import Flask, render_template, Response, jsonify, request, send_file
 # from keras.models import model_from_json
 # from keras.preprocessing import image
 # from io import BytesIO
-
+app = Flask(__name__)
 
 
 # ===================FOR DEVELOPMENT ONLY=================
@@ -17,6 +17,16 @@ app.debug = True
 #     id = db.Column(db.Integer, primary_key=True)
 #     fileName = db.Column(db.String(300))
 #     data = db.Column(db.LargeBinary)
+
+def create_url(letters):
+    for i in range(0, len(letters)):
+        x = letters[i]
+        letters[i] = 'images/'+ letters[i] +'.jpg'
+        print(letters[i])
+    return letters
+
+def split(word): 
+    return [char for char in word]  
 
 @app.route('/ocr2sign')
 def ocr2sign():
@@ -29,8 +39,10 @@ def txt2sign():
 @app.route('/uploadQuery', methods=['POST'])
 def convertQuery():
     text = request.form['inputQuery']
-    
-
+    text_list = split(text)
+    paths = create_url(text_list)
+    # print(paths)
+    return render_template('txt2sign-success.html', paths)
 
 @app.route('/')
 def index():

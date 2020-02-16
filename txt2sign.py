@@ -20,6 +20,12 @@ images_url = []
 for i in range(97,123):
     images_url.append('images/'+ chr(i) +'.jpg')
 
+def split(word): 
+    return [char for char in word]  
+
+
+
+
 class FileContents(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     fileName = db.Column(db.String(300))
