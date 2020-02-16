@@ -1,0 +1,19 @@
+.inputForm{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.results img {
+    height: 200px;
+    width: 240px;
+    align-items: center;
+    border: 1px solid greenyellow;
+    transition: 0.2s;
+}
+
+.results img:hover {
+    height: 200px;
+    width: 240px;
+    align-items: center;
+    border: 2px solid black;
+}

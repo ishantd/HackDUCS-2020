@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+      
+      <form method="POST" action="/upload" enctype="multipart/form-data"></form>
+        
+        <div class="form-group">
+          <div class="inputForm">
+            <h1>OCR to Sign Language Converter</h1>
+            <!-- <label for="inputFile"> Image File Input </label> <br> -->
+            <h2 id="input">
+              Please upload file here:
+            </h2>
+            <input type="file" name="inputFile">
+            
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          
+          
+</div>
+      </form>
+      <div class="results">
+        <h2>Your Results:</h2>
+        <div class="row">
+          <div class="col">
+            <h4>g</h4>
+            <img src="images/g.jpg" alt="">
+          </div>
+          <div class="col">
+            <h4>j</h4>
+            <img src="images/j.jpg" alt="">
+          </div>
+          <div class="col">
+            <h4>j</h4>
+            <img src="images/j.jpg" alt="">
+          </div>
+          <div class="col">
+            <h4>g</h4>
+            <img src="images/g.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4>g</h4>
+            <img src="images/g.jpg" alt="">
+          </div>
+          <div class="col">
+            <h4>j</h4>
+            <img src="images/j.jpg" alt="">
+          </div>
+          <div class="col">
+            <h4>g</h4>
+            <img src="images/g.jpg" alt="">
+          </div>
+          <div class="col">
+            <h4>C</h4>
+            <img src="images/c.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4>C</h4>
+            <img src="images/c.jpg" alt="">
+          </div>
+          <div class="col">
+            <h4>C</h4>
+            <img src="images/c.jpg" alt="">
+          </div>
+          <div class="col">
+            <h4>g</h4>
+            <img src="images/g.jpg" alt="">
+          </div>
+          <div class="col">
+            <h4>j</h4>
+            <img src="images/j.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      {% endblock %}

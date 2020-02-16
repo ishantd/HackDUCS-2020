@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+      <div class="jumbotron">
+        <h1 class="display-4">Hello Everyone!</h1>
+        <p class="lead">This is a web UI for our Hello! App</p>
+        <hr class="my-4">
+        <h3 class="display-4">Problem Statement:</h3>
+        <p>Differently abled and mute people use gesture-based communication methods to convey their thoughts and the most common medium are hand gestures. An innovation to help deaf 
+          adn mute people to communicate with others is a relevant solution.
+        </p>
+        <h3 class="display-4">Our Solution:</h3>
+        <p>
+          We have created a web API soon to be turned into a personal assistant that can help us converse with people who are Differently abled with a lot of ease.
+          This API will help the user by:
+          <ul> 
+            <li>learn ASL or ISL standard of sign language,</li>
+            <li>convert text into sign language,</li> 
+            <li>translate using live camera feed sign language gestures into text</li>
+            <li>for Differently abled people who didn't have the oppurtunity to learn how to read, an OCR system that converts the written text to speech and also to Sign Language Gestures</li>
+           </ul>
+        </p>
+
+        <!-- <a class="btn btn-success btn-lg" href="/whatemotion" role="button">Live Demonstration</a> -->
+      </div>
+
+      <div class="row">
+          <div class="col-lg-6">
+            <div class="card" style="width: 28rem;">
+                <img class="card-img-top" src="/images/c.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Text to Sign Language Converter</h5>
+                  <p class="card-text">Use this API to translate any language of your choice to Sign Language. It is easy to use and uses Python. </p>
+                  <a href="txt2sign.html" class="btn btn-primary">Go To API</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card" style="width: 28rem;">
+                <img class="card-img-top" src="/images/g.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Sign Language to Text Converter</h5>
+                  <p class="card-text">This API takes video input of hand gestures as in Indian Standards of Sign Langauge and translates them into any langauge of user's choice. This model
+                    google's tensforlow functions and VGG classification methods. <i class="fa fa-user-secret" aria-hidden="true"></i></p>
+                  <a href="signtotext.html" class="btn btn-primary">Go to API</a>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card" style="width: 28rem;">
+              <img class="card-img-top" src="/images/j.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">OCR to Sign Language Converter</h5>
+                <p class="card-text">OCR to Sign Language Converter that takes input from image or live camera feed and uses Azure's cognital services API to deliver OCR results.</p>
+                <a href="ocr2sign.html" class="btn btn-primary">Go To API</a>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+
+    {% endblock %}

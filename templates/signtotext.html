@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2T</title>
+    
+    <link rel="stylesheet" href="/css/s2t.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head> -->
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <h1>Sign Language to Text converter</h1>
+            <h3>This API coverts American sign Language and Indian Sign language to text in realtime. It uses CNN to train the requried models for prediction.
+                The dataset for this model will be custom made.
+            </h3>
+        </div>
+        <div class="Out">
+            <h1>Camera Input</h1>
+        </div>
+
+
+        <div class="black">
+            <h2>Record your Video here</h2>
+        </div>
+
+    <input type="submit" value="Upload your video here" class="btn" />
+
+         <div class="form-group">
+            <h3>Select Your Language</h3>
+            <select name="dealer">
+                <option value="">Language Preferences</option>
+                <option value="Mayak Malhotra">Hindi</option>
+                <option value="Nitin Sharma">English</option>
+                <option value="Tushar Kapoor">Spanish</option>
+                <option value="Gopal Kumar">Mandarin</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3>Translator</h3>
+            <textarea
+                name= "comments"
+                id = ""
+                cols = "30"
+                rows="10"
+                placeholder= " Your Translated texr will be presented here!"
+            ></textarea>
+
+
+
+        
+                
+             </div>
+             
+             <div class="form-group">
+                 <h3>Please rate Your Experience</h3>
+                 <input type="radio" name="rating" value="1" /> 1
+                 <input type="radio" name="rating" value="2" /> 2
+                 <input type="radio" name="rating" value="3" /> 3
+                 <input type="radio" name="rating" value="4" /> 4
+                 <input type="radio" name="rating" value="5" /> 5
+                 <input type="radio" name="rating" value="6" /> 6
+                 <input type="radio" name="rating" value="7" /> 7
+                 <input type="radio" name="rating" value="8" /> 8
+                 <input type="radio" name="rating" value="9" /> 9
+                 <input type="radio" name="rating" value="10" checked /> 10
+                </div>     
+             </div>
+             <input type="submit" value="submit" class="btn" />
+         </form>
+    </div> 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
