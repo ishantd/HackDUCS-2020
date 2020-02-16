@@ -7,9 +7,6 @@ from flask import Flask, render_template, Response, jsonify, request, send_file
 # from keras.preprocessing import image
 # from io import BytesIO
 
-app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/ishant/ishant_linux/boongg_project/web_api/database/filesstorage.db'
-# db = SQLAlchemy(app)
 
 
 # ===================FOR DEVELOPMENT ONLY=================
@@ -32,9 +29,7 @@ def txt2sign():
 @app.route('/uploadQuery', methods=['POST'])
 def convertQuery():
     text = request.form['inputQuery']
-    processed_text = text.upper()
-
-    return processed_text
+    
 
 
 @app.route('/')
